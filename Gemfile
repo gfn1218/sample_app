@@ -17,10 +17,15 @@ gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3'
 # gem 'ruby-debug'
 # gem 'ruby-debug19'
 
+#group :development do
+#	gem 'annotate-models', '1.0.4'
+#end
+
 group :development, :test do
 	gem 'rspec-rails', '>=2.0.1'
 	gem 'webrat', '0.7.1'
 	gem 'spork', '0.8.4'
+	gem 'annotate-models', '1.0.4'
 end
 
 # Bundle the extra gems:
