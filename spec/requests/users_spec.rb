@@ -11,7 +11,7 @@ describe "Users" do
         fill_in "Password",        :with =>""
         fill_in "Confirmation",    :with =>""
         click_button
-        response.should render_template('uses/new')
+        response.should render_template('users/new')
         response.should have_selector("div#error_explanation")
       end.should_not change(User, :count)
       end
